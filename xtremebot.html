@@ -162,11 +162,40 @@ footer .logo{font-family:var(--black);font-size:1.4rem;color:var(--ink);text-tra
 .modal-body .badge.gold{border:1px solid var(--red);color:var(--red);padding:2px 8px;font-size:.62rem;letter-spacing:.15em}
 
 /* RESPONSIVE */
+@media (max-width:1100px){
+  .feat-grid,.price-grid{grid-template-columns:repeat(2,1fr)}
+}
 @media (max-width:900px){
   .hero{grid-template-columns:1fr}
-  .hero-stats{grid-template-columns:1fr 1fr}
+  .hero-stats{grid-template-columns:1fr 1fr;padding:32px}
   .feat-grid,.price-grid{grid-template-columns:1fr}
   #nav .nav-links{display:none}
+  .cta-banner{padding:8vh 5vw}
+}
+@media (max-width:600px){
+  #nav{padding:12px 16px;gap:12px}
+  #nav .logo{font-size:.85rem}
+  #nav .nav-cta{padding:6px 10px;font-size:.62rem}
+  .hero{margin-top:47px}
+  .hero-text{padding:10vh 6vw;gap:14px}
+  .hero-stats{grid-template-columns:1fr 1fr;padding:16px}
+  .stat-card{padding:16px 14px}
+  .stat-value{font-size:clamp(1.6rem,9vw,2.4rem)}
+  .stat-label{font-size:.55rem;letter-spacing:.12em}
+  section{padding:9vh 5vw}
+  .price-row{flex-wrap:wrap;gap:4px}
+  .price-note{flex-direction:column;gap:8px}
+  footer{padding:8vh 5vw}
+  .watermark-float{right:10px;bottom:10px;padding:6px 10px;font-size:.58rem}
+  .wm-avatar{width:22px;height:22px}
+}
+@media (max-width:400px){
+  .hero-stats{grid-template-columns:1fr 1fr;padding:12px}
+  .stat-card{padding:14px 10px}
+  .hero-cta .btn{width:100%;text-align:center}
+}
+@media (max-width:340px){
+  .hero-stats{grid-template-columns:1fr}
 }
 
 </style>
